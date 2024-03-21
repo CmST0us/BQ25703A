@@ -1,0 +1,33 @@
+{
+  "originHash" : "7fac2d858c2144b2f6f8926fd75534df1766bec56ee0802a57187a18254a20c6",
+  "pins" : [
+    {
+      "identity" : "swift-mmio",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-mmio.git",
+      "state" : {
+        "revision" : "e75a13854fe25ac75043c4fdb15d0dbdb55bc1d1",
+        "version" : "0.0.2"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "64889f0c732f210a935a0ad7cda38f77f876262d",
+        "version" : "509.1.1"
+      }
+    },
+    {
+      "identity" : "swifttui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rensbreur/SwiftTUI.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9ae1ac9f2f4070a1186e7f4adafebe9bf1beedff"
+      }
+    }
+  ],
+  "version" : 3
+}
