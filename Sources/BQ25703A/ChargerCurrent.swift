@@ -13,7 +13,7 @@ import MMIO
 public struct ChargerCurrent {
     
     @Register(bitWidth: 16)
-    struct Current {
+    public struct Current {
         @ReadOnly(bits: 13..<16, as: Bool.self)
         public var reserved1: RESERVED1
         

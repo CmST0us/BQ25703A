@@ -3,7 +3,6 @@
 
 import Foundation
 import SwiftTUI
-import Logging
 import MMIO
 import MMIOMacros
 import MMIOUtilities
@@ -58,7 +57,7 @@ struct ContentView: View {
                                     if let bufferBaseAddress = ptr.baseAddress {
                                         let bufferMemoryAddress = UInt(bitPattern: bufferBaseAddress)
                                         let control = MaxChargeVoltage(unsafeAddress: bufferMemoryAddress)
-                                        let storage = UInt16(bigEndian: control.value.read().storage)
+                                        let storage = UInt16(bigEndian: control.value.read().raw.storage)
                                         
                                         var voltage: Int = 0
                                         for bit in 4..<15 {
@@ -83,7 +82,7 @@ struct ContentView: View {
                                     if let bufferBaseAddress = ptr.baseAddress {
                                         let bufferMemoryAddress = UInt(bitPattern: bufferBaseAddress)
                                         let control = ChargerCurrent(unsafeAddress: bufferMemoryAddress)
-                                        let storage = UInt16(bigEndian: control.value.read().storage)
+                                        let storage = UInt16(bigEndian: control.value.read().raw.storage)
                                         
                                         var current: Int = 0
                                         for bit in 6..<13 {
@@ -108,7 +107,7 @@ struct ContentView: View {
                                     if let bufferBaseAddress = ptr.baseAddress {
                                         let bufferMemoryAddress = UInt(bitPattern: bufferBaseAddress)
                                         let control = MinSystemVoltage(unsafeAddress: bufferMemoryAddress)
-                                        let storage = UInt16(bigEndian: control.value.read().storage)
+                                        let storage = UInt16(bigEndian: control.value.read().raw.storage)
                                         
                                         var voltage: Int = 0
                                         for bit in 8..<14 {
