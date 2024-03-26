@@ -1,5 +1,4 @@
 {
-  "originHash" : "7fac2d858c2144b2f6f8926fd75534df1766bec56ee0802a57187a18254a20c6",
   "pins" : [
     {
       "identity" : "swift-mmio",
@@ -29,5 +28,5 @@
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }
