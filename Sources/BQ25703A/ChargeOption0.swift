@@ -1,5 +1,5 @@
 //
-//  ChargerOption0.swift
+//  ChargeOption0.swift
 //
 //
 //  Created by Eric Wu on 2024/3/21.
@@ -10,7 +10,7 @@ import MMIO
 
 /// Charge Option 0
 @RegisterBank
-public struct ChargerOption0 {
+public struct ChargeOption0 {
     public enum WatchDogTimerAdjust: Int, BitFieldProjectable {
         case disabled
         case enable5Second

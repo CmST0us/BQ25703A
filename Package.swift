@@ -17,6 +17,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/apple/swift-mmio.git", from: "0.0.2"),
         .package(url: "https://github.com/rensbreur/SwiftTUI.git", branch: "main"),
+        .package(url: "https://github.com/CmST0us/PeripheryKit.git", branch: "main")
     ],
     targets: [
         .target(
@@ -29,7 +30,8 @@ let package = Package(
             name: "Tester",
             dependencies: [
                 .target(name: "BQ25703A"),
-                .product(name: "SwiftTUI", package: "SwiftTUI")
+                .product(name: "SwiftTUI", package: "SwiftTUI"),
+                .product(name: "PeripheryKit", package: "PeripheryKit")
             ])
     ]
 )

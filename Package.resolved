@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "peripherykit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CmST0us/PeripheryKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3dc804af9034540e865525bbb1dd3153529f2b16"
+      }
+    },
+    {
       "identity" : "swift-mmio",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-mmio.git",
